@@ -11,7 +11,10 @@ public class MoneyTransfer {
             System.out.println("Insufficient balance.");
             return false;
         }
-
+        if (amount > 50000) {
+            System.out.println("Transfer limit exceeded.");
+            return false;
+}
         System.out.println("Money transferred successfully.");
         return true;
     }
